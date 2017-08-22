@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EncountersService } from '../../services/encounters';
 
+
 @Component({
   selector: 'app-encounters',
   templateUrl: './encounters.component.html',
@@ -8,9 +9,11 @@ import { EncountersService } from '../../services/encounters';
 })
 export class EncountersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private encounterService: EncountersService) { }
 
-  ngOnInit() {
+  async ngOnInit() {
+    const encounter = await this.encounterService.getEncounters();
+    console.log(encounter);
   }
 
 }

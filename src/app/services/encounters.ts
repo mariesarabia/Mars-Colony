@@ -11,7 +11,7 @@ export class EncountersService {
 
     }
 
-    getAliens(): Promise<Report[]> {
+    getEncounters(): Promise<Report[]> {
         return this.http.get(this.encountersUrl)
                 .toPromise()
                 .then((response) => response.json().encounters)
