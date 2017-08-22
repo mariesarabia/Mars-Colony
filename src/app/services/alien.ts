@@ -11,7 +11,7 @@ export class AlienService {
 
     }
 
-    getAliens(): Promise<Alien[] {
+    getAliens(): Promise<Alien[]> {
         return this.http.get(this.aliensUrl)
                 .toPromise()
                 .then((response) => response.json().aliens)

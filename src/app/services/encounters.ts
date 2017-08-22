@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Encounter  } from '../models/encounter';
+import { Report } from '../models/report';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
-export class EncounterService {
-    aliensUrl = 'https://red-wdp-api.herokuapp.com/api/mars/encounters';
+export class EncountersService {
+    encountersUrl = 'https://red-wdp-api.herokuapp.com/api/mars/encounters';
 
     constructor(private http: Http) {
 
     }
 
-    getAliens(): Promise<Encounter[] {
+    getAliens(): Promise<Report[]> {
         return this.http.get(this.encountersUrl)
                 .toPromise()
                 .then((response) => response.json().encounters)
