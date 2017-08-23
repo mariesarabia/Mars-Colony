@@ -5,7 +5,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class JobService {
-    jobsUrl = 'https://red-wdp-api.herokuapp.com/api/mars/encounters';
+    jobsUrl = 'https://red-wdp-api.herokuapp.com/api/mars/jobs';
 
     constructor(private http: Http) {
 
