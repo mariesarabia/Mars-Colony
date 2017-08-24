@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { EncountersService } from '../../services/encounters';
 
+import { 
+  FormControl, 
+  FormGroup, 
+  Validators,
+  ValidatorFn
+} from '@angular/forms';
+
 
 @Component({
   selector: 'app-encounters',

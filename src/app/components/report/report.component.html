@@ -1,9 +1,17 @@
 <h1>Report Encounter</h1>
 <p>Safety on Mars is your responsibility</p>
-<select>
-  <option value="special-k">Special K</option>
-  <option value="endomorph">Endomorph</option>
-  <option value="octospider">The Predator</option>
-  <option value="darth-vader">Donald Trump</option>
-</select>
+<form [formGroup]="reportForm" novalidate (submit)="reportEncounter()">
+    
+        <div class="form-group">
+        <select formControlName="alien_id">
+            <option value="none">Select Alien Type</option>
+            <option *ngFor="let alien of aliens" [value]="alien.id">{{ alien.name }}</option>
+        </select>
+        </div>
+    
+        <p>Action taken</p>
+        <button [disabled]="reportForm.status ==='INVALID'" type="submit">Submit Report</button>
+      </form>
+
+
 
