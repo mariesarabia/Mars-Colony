@@ -15,7 +15,7 @@ import {
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styles: [],
+  styleUrls: ['./register.component.scss'],
   providers:  [
     JobService,
     ColonistService
