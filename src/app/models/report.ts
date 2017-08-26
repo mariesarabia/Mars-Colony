@@ -8,7 +8,7 @@ export interface Report {
 
 export interface NewReport {
     atype: string;
-    id: string,
+    action: string,
     date: string,
     colonist_id: string,
 }

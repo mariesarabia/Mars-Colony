@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EncountersService } from '../../services/encounters';
+import { Report } from '../../models/report';
 
 import { 
   FormControl, 
@@ -12,15 +13,19 @@ import {
 @Component({
   selector: 'app-encounters',
   templateUrl: './encounters.component.html',
-  styles: []
+  styles: [],
+  providers: [
+    EncountersService
+  ]
 })
 export class EncountersComponent implements OnInit {
+
+  encounters: Report[]
 
   constructor(private encounterService: EncountersService) { }
 
   async ngOnInit() {
-    const encounter = await this.encounterService.getEncounters();
-    console.log(encounter);
+    this.encounters = await this.encounterService.getEncounters();
   }
 
 }

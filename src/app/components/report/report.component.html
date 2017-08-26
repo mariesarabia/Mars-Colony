@@ -5,13 +5,13 @@
         <div class="form-group">
         <select formControlName="alien_id">
             <option value="none">Select Alien Type</option>
-            <option *ngFor="let alien of aliens" [value]="alien.id">{{ alien.name }}</option>
+            <option *ngFor="let alien of aliens" [value]="alien.type">{{ alien.type }}</option>
         </select>
         </div>
     
-        <p>Action taken</p>
-        <button [disabled]="reportForm.status ==='INVALID'" type="submit">Submit Report</button>
+        <textarea formControlName="description" type="text">Action taken</textarea>
+        <!-- <button [disabled]="reportForm.status ==='INVALID'" type="submit">Submit Report</button> -->
+        <!-- <a routerLink ="/encounters"> -->
+            <button type="button">Submit Report</button>
       </form>
-
-
-
+ 
