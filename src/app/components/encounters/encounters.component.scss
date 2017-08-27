@@ -1,6 +1,30 @@
+.encounter.container {
+    background: url('../../../assets/images/nasa-mars-602861a.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Josefin Sans';
+    color: white;
+}
+
 h1 {
-    font-size: 2rem;
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
     text-transform: uppercase;
-    font-family: sans-serif;
+    padding-top: 4rem;
+    letter-spacing: 2px;
+}
+
+p {
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+footer {
+    position: fixed;
+    background-color: white;
 }
 

@@ -1,20 +1,24 @@
 .register {
-    background: url('../../../assets/images/mars-globe-valles-marineris-enhanced.jpg') no-repeat;
+    background: url('../../../assets/images/nasa-mars-602861a.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
-}
 
+    // .border {
+    //     border: 4px solid #00efed;
+    //     width: 350px;
+    //     height: 600px;
+    //     margin: auto;
+    // }
 
-
-.page {
-    background-color: black;
-    height: 100vh;
     font-family: 'Josefin Sans';
     font-weight: 300;
     text-transform: uppercase;
         h1 {
             text-transform: uppercase;
             color: #fff;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            text-align: center;
         }
 
         p {

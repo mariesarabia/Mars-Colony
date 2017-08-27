@@ -1,4 +1,7 @@
 <div class="register">
+  <div class="border">
+  <h1>Register</h1>
+
   <form [formGroup]="registerForm" novalidate (submit)="registerColonist()">
 
     <div class="form-group">
@@ -20,6 +23,7 @@
 
     <button [disabled]="registerForm.status ==='INVALID'" type="submit">Register</button>
   </form>
+  </div>
 </div>
 {{ registerForm.status | json }}
 {{ registerForm.value | json }}

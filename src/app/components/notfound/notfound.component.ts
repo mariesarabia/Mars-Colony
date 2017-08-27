@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'app-notfound',
   templateUrl: './notfound.component.html',
-  styles: []
+  styleUrls: ['./notfound.component.scss'],
 })
 export class NotfoundComponent implements OnInit {
 

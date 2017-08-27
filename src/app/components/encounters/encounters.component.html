@@ -1,10 +1,13 @@
-<div>
+<div class="encounter container">
     <h1>Recent Encounters</h1>
     <p>See an Alien? Report it</p>
-    <div *ngFor="let encounter of encounters">{{encounter.date}} - {{ encounter.atype }}
-    <p>{{encounter.action}}</p>
-</div>
+    <div class="encounter">
+        <div *ngFor="let encounter of encounters">{{encounter.date}} - {{ encounter.atype }}
+        <p>{{encounter.action}}</p></div>
+    </div>
+    <footer class="report encounter">
     <a routerLink ="/report"><button type="button">Report Encounter</button></a>
+    </footer>
 </div>
 
 
