@@ -1,15 +1,38 @@
-.page {
-    background-color: #64071A;
+.register {
+    background: url('../../../assets/images/mars-globe-valles-marineris-enhanced.jpg') no-repeat;
+    background-size: cover;
     height: 100vh;
-    font-family: sans-serif;
+}
+
+
+
+.page {
+    background-color: black;
+    height: 100vh;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    text-transform: uppercase;
         h1 {
             text-transform: uppercase;
             color: #fff;
         }
+
+        p {
+            font-family: 'Josefin Sans';
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
         label {
             color: #fff;
         }
+
         .button {
             
+        }
+
+        .option {
+            font-family: 'Josefin Sans';
+            font-weight: 300;
         }
 }
