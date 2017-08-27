@@ -1,7 +1,7 @@
 <div class="encounter container">
     <h1>Recent Encounters</h1>
-    <p>See an Alien? Report it</p>
-    <div class="encounter">
+    <h3>See an Alien? Report it</h3>
+    <div class="encounters">
         <div *ngFor="let encounter of encounters">{{encounter.date}} - {{ encounter.atype }}
         <p>{{encounter.action}}</p></div>
     </div>

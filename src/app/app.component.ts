@@ -12,7 +12,7 @@ import {
 } from '@angular/animations';
 
 export const routerTransition = trigger( 'routerTransition', [
-  transition( 'welcome <=> register', [
+  transition( '* <=> *', [
     query( ':enter, :leave', style({ position: 'fixed', width: '100%' })
   , { optional: true }),
   group([

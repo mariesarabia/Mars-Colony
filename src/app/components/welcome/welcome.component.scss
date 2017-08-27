@@ -14,6 +14,7 @@
     background: url('../../../assets/images/nasa-mars-602861a.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
+    margin: 0;
 }
 
 h1 {
@@ -27,15 +28,30 @@ h1 {
     letter-spacing: 2px;
 }
 
-p {
+.mars-o {
+    color: #bb5f46;
+}
+
+.tap {
     font-size: 0.8rem;
     text-align: center;
     font-family: 'Josefin Sans';
     font-weight: 300;
-    margin-top: 40%;
+    margin-top: 25rem;
     text-decoration: none;
     color: lightgray;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
+@media screen and (min-width: 600px) {
+    p {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    p {
+        margin-top: 7rem;
+    }
+}

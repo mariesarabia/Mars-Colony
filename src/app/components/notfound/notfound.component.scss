@@ -15,3 +15,17 @@ p {
     position: relative;
     letter-spacing: 2px;
 }
+
+@media screen and (min-width: 600px) {
+    p {
+        position: fixed;
+        margin-left: 10rem;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    p {
+        position: fixed;
+        margin-left: 10rem;
+    }
+}

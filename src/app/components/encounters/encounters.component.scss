@@ -4,6 +4,7 @@
     height: 100vh;
     font-family: 'Josefin Sans';
     color: white;
+    margin-top: 0;
 }
 
 h1 {
@@ -17,9 +18,12 @@ h1 {
     letter-spacing: 2px;
 }
 
+h3 {
+    text-align: center;
+}
+
 p {
     font-weight: 300;
-    color: #fff;
     font-size: 1.2rem;
 }
 
@@ -28,3 +32,10 @@ footer {
     background-color: white;
 }
 
+.encounters {
+    overflow-y: scroll;
+    height: 400px;
+    background-color: #fff;
+    color: #000;
+    padding: 30px;
+}
