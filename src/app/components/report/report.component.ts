@@ -42,7 +42,6 @@ export class ReportComponent implements OnInit {
   async ngOnInit() {
     this.aliens = await this.alienService.getAliens();
     // this.date = new Date().toISOString().slice(0,10);
-      // console.log(this.aliens);
   }
 
   // async registerColonist() {
