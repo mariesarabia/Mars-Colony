@@ -16,16 +16,20 @@ p {
     letter-spacing: 2px;
 }
 
+span {
+    color: #bb5f46;
+}
+
 @media screen and (min-width: 600px) {
     p {
         position: fixed;
-        margin-left: 10rem;
+        margin-left: 40rem;
     }
 }
 
 @media screen and (min-width: 1240px) {
     p {
         position: fixed;
-        margin-left: 10rem;
+        margin-left: 18rem;
     }
 }

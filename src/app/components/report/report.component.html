@@ -1,7 +1,7 @@
 <div class="report">
     <h1>Report Encounter</h1>
     <h3>Safety on <span>Mars</span> is your responsibility</h3>
-    <form [formGroup]="reportForm" novalidate (submit)="reportEncounter()">
+    <form [formGroup]="reportForm" novalidate (submit)="reportEncounters()">
         
             <div class="form-group">
                 <select formControlName="alien_id">
@@ -11,8 +11,8 @@
             </div>
         
             <textarea formControlName="description" type="text">Action taken</textarea>
-            <!-- <button [disabled]="reportForm.status ==='INVALID'" type="submit">Submit Report</button> -->
+            <button [disabled]="reportForm.status ==='INVALID'" type="submit">Submit Report</button>
             <a routerLink ="/encounters">
-                <button type="button">Submit Report</button></a>
+                </a>
     </form>
 </div>
