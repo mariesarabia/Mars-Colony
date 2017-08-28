@@ -17,6 +17,9 @@
         text-transform: uppercase;
         padding-top: 4rem;
         letter-spacing: 2px;
+        span {
+            color: $color_mars;
+        }
     }
 
     h3 {
@@ -41,8 +44,8 @@ p {
 
 .encounters {
     overflow-y: scroll;
-    height: 350px;
-    background-color: #fff;
+    height: 325px;
+    background-color: $color-reverse;
     color: #000;
     padding: 30px;
     font-size: 1rem;
@@ -57,13 +60,23 @@ p {
 
 footer {
     position: fixed;
-    background-color: $color_reverse;
+    // background-color: $color_reverse;
     padding: 5px 10px;
     margin-left: 25%;
-        a {
+    button {
+        color: $color_reverse;
+        padding: 12px 20px;
+        border: 3px solid $color_mars;
+        border-radius: 4px;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-left: 60%;
+    }
+    a {
             text-decoration: none;
             text-transform: uppercase;
-        }
+    }
 }
 
 @media screen and (min-width: 600px) {
