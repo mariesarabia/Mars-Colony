@@ -26,7 +26,7 @@ import {
 })
 export class ReportComponent implements OnInit {
 
-  public aliens: Alien[];
+  aliens: Alien[] = [];
   
     reportForm = new FormGroup({
       atype: new FormControl('', []),
@@ -45,14 +45,14 @@ export class ReportComponent implements OnInit {
   }
 
   async reportEncounters(){
-    const newReport: NewReport = {
+    const reportEncounters: NewReport = {
       atype : this.reportForm.get('atype').value,
        date : '07-30-2017', 
       action : this.reportForm.get('action').value,
       colonist_id :'4'
     }
 
-    const report = await this.encountersService.reportEncounters(newReport);
+    const report = await this.encountersService.reportEncounters(reportEncounters);
     this.router.navigate(['encounters']);
 
   }

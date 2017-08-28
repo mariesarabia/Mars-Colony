@@ -18,9 +18,9 @@ export class EncountersService {
                 .catch(this.handleError);
     }
 
-    reportEncounters(report:NewReport): Promise<Report[]> {
-        let headers = new Headers({"Content_Type":"application/json"});
-        let body = JSON.stringify({report});
+    reportEncounters(encounter:NewReport): Promise<Report[]> {
+        let headers = new Headers({"Content-Type":"application/json"});
+        let body = JSON.stringify({encounter});
         return this.http.post(this.encountersUrl, body, {headers:headers})
                 .toPromise()
                 .then((response) => response.json().encounters)
