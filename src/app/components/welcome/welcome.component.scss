@@ -1,48 +1,40 @@
+@import '../../../_theme.scss';
+
 .welcome {
     background: url('../../../assets/images/nasa-mars-602861a.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     margin: 0;
-}
 
-h1 {
-    color: #fff;
-    font-size: 2.2rem;
-    text-align: center;
-    font-family: 'Josefin Sans';
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-top: 4rem;
-    letter-spacing: 2px;
-}
+    h1 {
+        color: #fff;
+        font-size: 2.2rem;
+        text-align: center;
+        font-family: $font_main;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-top: 4rem;
+        letter-spacing: 2px;
 
-.mars-o {
-    color: #bb5f46;
-}
+        .mars-o {
+            color: $color_mars;
+        }
+    }
 
-.tap {
-    font-size: 0.8rem;
-    text-align: center;
-    font-family: 'Josefin Sans';
-    font-weight: 300;
-    margin-top: 15rem;
-    text-decoration: none;
-    color: lightgray;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-@media screen and (min-width: 600px) {
-    p {
-        margin-top: 4rem;
+    .tap {
+        font-size: 0.8rem;
+        text-align: center;
+        font-family: $font_main;
+        font-weight: 300;
+        margin-top: 15rem;
+        text-decoration: none;
+        color: lightgray;
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
 }
 
-@media screen and (min-width: 1240px) {
-    p {
-        margin-top: 7rem;
-    }
-}
+//PULSATING CIRCLE ANIMATION
 
 .pulse-container {
     display: flex;
@@ -56,7 +48,7 @@ h1 {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #8a4a31;
+    background-color: $color_mars-var1;
     transform: scale(0.2);
     transform-origin: center center;
     animation: pulse-me 3s linear infinite;
@@ -66,7 +58,7 @@ h1 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #ff7349;
+    background-color: $color_mars-var2;
     transform: scale(0.4);
     transform-origin: center center;
     animation: pulse-me 5s linear infinite;
@@ -76,7 +68,7 @@ h1 {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #bb5f46;
+    background-color: $color_mars;
     transform: scale(0.6);
     transform-origin: center center;
     animation: pulse-me 8s linear infinite;
@@ -100,27 +92,14 @@ h1 {
 }
 
 
-// circle-pulse {
-// 	overflow: visible;
-    
-//     .circle-one {
-// 		fill: #f00;
-// 		transform: scale(0.5);
-// 		transform-origin: center center;
-// 		animation: pulse 5s infinite;
-//     }
+@media screen and (min-width: 600px) {
+    p {
+        margin-top: 4rem;
+    }
+}
 
-//     .circle-two {
-// 		fill: #f00;
-// 		transform: scale(0.5);
-// 		transform-origin: center center;
-// 		animation: pulse 3s infinite;
-//     }
-
-//     .circle-three {
-// 		fill: #f00;
-// 		transform: scale(0.5);
-// 		transform-origin: center center;
-// 		animation: pulse 1s infinite;
-//     }
-// }
+@media screen and (min-width: 1240px) {
+    p {
+        margin-top: 7rem;
+    }
+}

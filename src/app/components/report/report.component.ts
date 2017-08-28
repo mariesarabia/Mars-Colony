@@ -29,8 +29,8 @@ export class ReportComponent implements OnInit {
   public aliens: Alien[];
   
     reportForm = new FormGroup({
-      atype: new FormControl('', [Validators.required]),
-      action: new FormControl('', [Validators.required]),
+      atype: new FormControl('', []),
+      action: new FormControl('', []),
       
     });
 

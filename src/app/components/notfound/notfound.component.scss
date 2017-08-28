@@ -1,24 +1,28 @@
+@import '../../../_theme.scss';
+
 .container {
     background: url('../../../assets/images/mars2020-full.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     font-family: 'Josefin Sans';
-    color: white;
+    color: $color_reverse;
+
+    p {
+        font-size: 1rem;
+        color: $color_reverse;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 20rem;
+        position: relative;
+        letter-spacing: 2px;
+    }
+    
+    span {
+        color: $color_mars;
+    }
 }
 
-p {
-    font-size: 1rem;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 20rem;
-    position: relative;
-    letter-spacing: 2px;
-}
 
-span {
-    color: #bb5f46;
-}
 
 @media screen and (min-width: 600px) {
     p {
