@@ -1,44 +1,32 @@
-MARS COLONY APP
+# MarsColonyApp
 
 A web-based application for Earth colonists exploring Mars using Angular 2.
 
-Features: 
+# Features:
 Implements GET and POST HTTP requests using Angular's HTTP service to:
     Save a new Colonist's information
     save a new Alien encounter
     Fetch a list of recent Alien encounters
     Create a new Encounter Report
 
-TECHNOLOGIES USED:
+# Technologies Used:
 
 Angular 2, HTML, CSS, Postman
 
-Learnings:
+# Learnings:
 
 Implementing the Angular 2 Router
 
 Implementing ngForm, validating user input, preventing foroms from sending invalid API requests
 
 Implementing Angular built-in directives such as:
-    ngFor
-    ngIf
-    ngClass
-    ngModel
+    ngFor, ngIf, ngClass, ngModel,
 
 
 Implementing the OnInit Class interface
 
 Implementing the following additional Angular features:
-    Class (to represent form data)
-    Decorator (@Component, @Routes, etc.)
-    Interface (to represent API Data)
-    Component
-
-
-
-
-
-
+    Class (to represent form data), Decorator (@Component, @Routes, etc.), Interface (to represent API Data), Component
 
 
 # MarsColonyApp
