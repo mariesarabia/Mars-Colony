@@ -2,13 +2,8 @@
     background: url('../../../assets/images/nasa-mars-602861a.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
-
-    // .border {
-    //     border: 4px solid #00efed;
-    //     width: 350px;
-    //     height: 600px;
-    //     margin: auto;
-    // }
+    padding: 3rem;
+    line-height: 2;
 
     font-family: 'Josefin Sans';
     font-weight: 300;
@@ -40,4 +35,5 @@
             font-family: 'Josefin Sans';
             font-weight: 300;
         }
+
 }
