@@ -12,7 +12,7 @@ export class ColonistService {
     }
 
     registerColonist(colonist: NewColonist): Promise<Colonist> {
-        const headers = new Headers({'Content-Type': 'application/json'});
+        const headers = new Headers({ 'Content-Type': 'application/json' });
         const body = JSON.stringify({ colonist });
 
         return this.http

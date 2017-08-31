@@ -13,18 +13,18 @@ export class EncountersService {
 
     getEncounters(): Promise<Report[]> {
         return this.http.get(this.encountersUrl)
-                .toPromise()
-                .then((response) => response.json().encounters)
-                .catch(this.handleError);
+            .toPromise()
+            .then((response) => response.json().encounters)
+            .catch(this.handleError);
     }
 
-    reportEncounters(encounter:NewReport): Promise<Report[]> {
-        let headers = new Headers({"Content-Type":"application/json"});
-        let body = JSON.stringify({encounter});
-        return this.http.post(this.encountersUrl, body, {headers:headers})
-                .toPromise()
-                .then((response) => response.json().encounters)
-                .catch(this.handleError);
+    reportEncounters(encounter: NewReport): Promise<Report[]> {
+        let headers = new Headers({ "Content-Type": "application/json" });
+        let body = JSON.stringify({ encounter });
+        return this.http.post(this.encountersUrl, body, { headers: headers })
+            .toPromise()
+            .then((response) => response.json().encounters)
+            .catch(this.handleError);
     }
 
     handleError(error) {

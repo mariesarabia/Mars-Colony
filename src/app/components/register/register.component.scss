@@ -1,43 +1,37 @@
 @import '../../../_theme.scss';
-
 .register {
     background: url('../../../assets/images/nasa-mars-602861a.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     padding: 3rem;
     line-height: 2;
-
     font-family: $font_main;
     font-weight: 300;
     text-transform: uppercase;
-        h1 {
-            text-transform: uppercase;
-            color: #fff;
-            letter-spacing: 2px;
-            font-size: 2rem;
-            text-align: center;
-            padding-top: 4rem;
-        }
-
-        p {
-            font-family: $font_main;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
-
-        label {
-            color: #fff;
-        }
-
-        .option {
-            font-family: $font_main;
-            font-weight: 300;
-        }
-
+    h1 {
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    p {
+        font-family: $font_main;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    label {
+        color: #fff;
+    }
+    .option {
+        font-family: $font_main;
+        font-weight: 300;
+    }
 }
 
-
-input, select {
+input,
+select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -57,13 +51,17 @@ button {
 }
 
 @media screen and (min-width: 600px) {
-    input, select, button {
+    input,
+    select,
+    button {
         display: inline-block;
     }
 }
 
 @media screen and (min-width: 1240px) {
-    input, select, button {
+    input,
+    select,
+    button {
         display: inline-block;
     }
 }

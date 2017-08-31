@@ -7,9 +7,9 @@ import { NewReport } from '../../models/report';
 import { Router } from '@angular/router';
 
 
-import { 
-  FormControl, 
-  FormGroup, 
+import {
+  FormControl,
+  FormGroup,
   Validators,
   ValidatorFn
 } from '@angular/forms';
@@ -27,29 +27,29 @@ import {
 export class ReportComponent implements OnInit {
 
   aliens: Alien[] = [];
-  
-    reportForm = new FormGroup({
-      atype: new FormControl('', []),
-      action: new FormControl('', []),
-      
-    });
+
+  reportForm = new FormGroup({
+    atype: new FormControl('', []),
+    action: new FormControl('', []),
+
+  });
 
   constructor(private alienService: AlienService,
     private encountersService: EncountersService,
-    private router:Router) { }
-  
+    private router: Router) { }
+
 
   async ngOnInit() {
     this.aliens = await this.alienService.getAliens();
     // this.date = new Date().toISOString().slice(0,10);
   }
 
-  async reportEncounters(){
+  async reportEncounters() {
     const reportEncounters: NewReport = {
-      atype : this.reportForm.get('atype').value,
-       date : '07-30-2017', 
-      action : this.reportForm.get('action').value,
-      colonist_id :'4'
+      atype: this.reportForm.get('atype').value,
+      date: '07-30-2017',
+      action: this.reportForm.get('action').value,
+      colonist_id: '4'
     }
 
     const report = await this.encountersService.reportEncounters(reportEncounters);

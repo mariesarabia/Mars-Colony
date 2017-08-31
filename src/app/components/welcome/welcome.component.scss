@@ -1,11 +1,9 @@
 @import '../../../_theme.scss';
-
 .welcome {
     background: url('../../../assets/images/nasa-mars-602861a.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     margin: 0;
-
     h1 {
         color: #fff;
         font-size: 2.2rem;
@@ -15,12 +13,10 @@
         text-transform: uppercase;
         padding-top: 4rem;
         letter-spacing: 2px;
-
         .mars-o {
             color: $color_mars;
         }
     }
-
     .tap {
         font-size: 0.8rem;
         text-align: center;
@@ -35,14 +31,12 @@
 }
 
 //PULSATING CIRCLE ANIMATION
-
 .pulse-container {
     display: flex;
     justify-content: center;
     align-content: center;
     margin-top: 8rem;
 }
-
 
 .circle-outer {
     width: 80px;
@@ -74,23 +68,22 @@
     animation: pulse-me 8s linear infinite;
 }
 
-@keyframes pulse-me{
-	0%{
-		transform: scale(0.5);
-		opacity: 0.3;
-	}
-	50%{
-		opacity: 0.6;
-	}
-	70%{
-		opacity: 0.4;
-	}
-	100%{
-		transform: scale(2);
-		opacity: 0.2;
-	}
+@keyframes pulse-me {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0.2;
+    }
 }
-
 
 @media screen and (min-width: 600px) {
     p {

@@ -1,5 +1,4 @@
 @import '../../../_theme.scss';
-
 .report {
     background: url('../../../assets/images/nasa-mars-602861a.jpg') no-repeat;
     background-size: cover;
@@ -10,7 +9,6 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
-
     h1 {
         color: #fff;
         font-size: 2.2rem;
@@ -23,7 +21,6 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    
     h3 {
         font-size: 0.8rem;
         text-align: center;
@@ -34,15 +31,12 @@
         letter-spacing: 2px;
         text-transform: uppercase;
     }
-    
     span {
         color: $color_mars;
     }
-    
     form {
         margin-top: 10rem;
     }
-    
     button {
         color: $color_reverse;
         padding: 12px 20px;
@@ -53,20 +47,16 @@
         font-size: 0.8rem;
         margin-left: 60%;
     }
-    
     select {
         width: 100%;
     }
-    
     textarea {
         width: 100%;
         height: 200px;
-        background-color: rgba( 237, 122, 91, 0.5 );
+        background-color: rgba( 237, 122, 91, 0.5);
         padding: 20px;
     }
 }
-
-
 
 @media screen and (min-width: 600px) {
     button {
@@ -78,5 +68,4 @@
     button {
         margin-left: 88%;
     }
-
 }

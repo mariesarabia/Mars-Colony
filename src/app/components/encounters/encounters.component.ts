@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { EncountersService } from '../../services/encounters';
 import { Report } from '../../models/report';
 
-import { 
-  FormControl, 
-  FormGroup, 
+import {
+  FormControl,
+  FormGroup,
   Validators,
   ValidatorFn
 } from '@angular/forms';

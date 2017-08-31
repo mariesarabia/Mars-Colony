@@ -5,9 +5,9 @@ import { JobService } from '../../services/job';
 import { Job } from '../../models/job';
 import { Router } from '@angular/router';
 
-import { 
-  FormControl, 
-  FormGroup, 
+import {
+  FormControl,
+  FormGroup,
   Validators,
   ValidatorFn
 } from '@angular/forms';
@@ -17,7 +17,7 @@ import {
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
-  providers:  [
+  providers: [
     JobService,
     ColonistService
   ]
@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
       Validators.maxLength(100),
       Validators.minLength(2),
       this.noNumbers(/[0-9]/)
-    ]), 
+    ]),
     age: new FormControl('', [
       Validators.required,
       Validators.max(150000),
@@ -53,28 +53,28 @@ export class RegisterComponent implements OnInit {
 
   async registerColonist() {
     const newColonist: NewColonist = {
-      name: this.registerForm.get('name').value, 
+      name: this.registerForm.get('name').value,
       age: this.registerForm.get('age').value,
-      job_id: this.registerForm.get('job_id').value 
+      job_id: this.registerForm.get('job_id').value
     };
 
 
     // console.log(this.registerForm.status)
     const colonist = await this.colonistService.registerColonist(newColonist);
-    if (this.registerForm.status === 'VALID'){this.router.navigate(['/encounters']);
-  }
+    if (this.registerForm.status === 'VALID') {
+      this.router.navigate(['/encounters']);
+    }
     // console.log('colonist was saved!', colonist);
   }
 
   private noNumbers(validNameRegex): ValidatorFn {
-    return (control):{ [key: string] : any } => {
+    return (control): { [key: string]: any } => {
       const forbiddenName = validNameRegex.test(control.value);
-      return forbiddenName ? { 'forbiddenName' : { value: control.value } } : null;
-      };
-    }
+      return forbiddenName ? { 'forbiddenName': { value: control.value } } : null;
+    };
   }
+}
 
-  
 
 
- 
+

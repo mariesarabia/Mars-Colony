@@ -1,5 +1,4 @@
 @import '../../../_theme.scss';
-
 .encounter.container {
     background: url('../../../assets/images/mars-globe-valles-marineris-enhanced.jpg') no-repeat;
     background-size: cover;
@@ -7,7 +6,6 @@
     font-family: $font_main;
     color: $color_reverse;
     margin-top: 0;
-
     h1 {
         color: #fff;
         font-size: 2.2rem;
@@ -21,21 +19,18 @@
             color: $color_mars;
         }
     }
-
     h3 {
-    font-size: 0.8rem;
-    text-align: center;
-    font-family: $font_main;
-    font-weight: 300;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-bottom: 2rem;
+        font-size: 0.8rem;
+        text-align: center;
+        font-family: $font_main;
+        font-weight: 300;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+    }
 }
-}
-
-
 
 p {
     font-weight: 300;
@@ -50,12 +45,9 @@ p {
     padding: 30px;
     font-size: 1rem;
     margin-bottom: 1rem;
-    
-
-        p {
-            border-bottom: 1px solid $color_mars;
-        }
-    
+    p {
+        border-bottom: 1px solid $color_mars;
+    }
 }
 
 footer {
@@ -74,8 +66,8 @@ footer {
         margin-left: 60%;
     }
     a {
-            text-decoration: none;
-            text-transform: uppercase;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 }
 
