@@ -5,14 +5,15 @@
 
         <div class="form-group">
             <select formControlName="atype">
-                    <option value="none">Select Alien Type</option>
+                    <option value="">Select Alien Type</option>
                     <option *ngFor="let alien of aliens" [value]="alien.type">{{ alien.type }}</option>
                 </select>
         </div>
 
         <textarea formControlName="action" placeholder="Action taken" ng-model="report.action" name="action_taken"></textarea>
-        <button type="submit">Submit Report</button>
-        <!-- <button class="button" [disabled]="reportForm.status === 'INVALID'" type="submit" class="report-button">Submit Report</button> -->
+        <!-- <button type="submit">Submit Report</button> -->
+        <button class="button" [disabled]="reportForm.status === 'INVALID'" type="submit" class="report-button">Submit Report</button>
+
 
 
     </form>

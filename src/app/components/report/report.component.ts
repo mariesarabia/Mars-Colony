@@ -29,8 +29,11 @@ export class ReportComponent implements OnInit {
   aliens: Alien[] = [];
 
   reportForm = new FormGroup({
-    atype: new FormControl('', []),
-    action: new FormControl('', []),
+    atype: new FormControl('', [Validators.required,
+    Validators.maxLength(20),
+    Validators.minLength(3),
+    this.noNumbers(/\d/ )]),
+    action: new FormControl('', [Validators.required]),
 
   });
 
@@ -55,6 +58,13 @@ export class ReportComponent implements OnInit {
     const report = await this.encountersService.reportEncounters(reportEncounters);
     this.router.navigate(['encounters']);
 
+  }
+
+  private noNumbers(validNameRegex): ValidatorFn {
+    return (control): { [key: string]: any } => {
+      const forbiddenName = validNameRegex.test(control.value);
+      return forbiddenName ? { 'forbiddenName': { value: control.value } } : null;
+    };
   }
 
 }
