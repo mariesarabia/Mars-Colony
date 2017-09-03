@@ -11,7 +11,6 @@
         </div>
 
         <textarea formControlName="action" placeholder="Action taken" ng-model="report.action" name="action_taken"></textarea>
-        <!-- <button type="submit">Submit Report</button> -->
         <button class="button" [disabled]="reportForm.status === 'INVALID'" type="submit" class="report-button">Submit Report</button>
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { EncountersService } from '../../services/encounters';
 import { Report } from '../../models/report';
 
@@ -18,14 +18,22 @@ import {
     EncountersService
   ]
 })
+
 export class EncountersComponent implements OnInit {
+
+  @Input () loading = false;
 
   encounters: Report[]
 
   constructor(private encounterService: EncountersService) { }
 
   async ngOnInit() {
+    this.loading = true;
     this.encounters = await this.encounterService.getEncounters();
-  }
-
+    this.loading = false;
+  } 
+  
 }
+
+
+

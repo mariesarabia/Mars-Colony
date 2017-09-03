@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Input } from '@angular/core';
 import { Report, NewReport } from '../models/report';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
@@ -12,6 +12,7 @@ export class EncountersService {
     }
 
     getEncounters(): Promise<Report[]> {
+        // this.loading = true;
         return this.http.get(this.encountersUrl)
             .toPromise()
             .then((response) => response.json().encounters)
