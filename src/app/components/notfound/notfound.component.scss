@@ -6,29 +6,38 @@
     font-family: 'Josefin Sans';
     color: $color_reverse;
     position: relative;
-    p {
-        font-size: 1rem;
-        color: $color_reverse;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 20rem;
-        position: relative;
-        letter-spacing: 2px;
-        margin-left: 10%;
-    }
-    span {
-        color: $color_mars;
-    }
-}
 
-@media screen and (min-width: 600px) {
-    p {
-        margin-left: 10%;
+    .error-message {
+        position: absolute;
+        font-family: $font_main;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .error-code {
+            font-size: 4rem;
+            color: $color_reverse;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+    
+        .error-text {
+            font-size: 1rem;
+            color: $color_reverse;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        
+        span {
+            color: $color_mars;
+        }
     }
 }
 
 @media screen and (min-width: 1240px) {
-    p {
-        margin-left: 10%;
-    }
+   
 }
