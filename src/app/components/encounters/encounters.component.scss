@@ -1,5 +1,5 @@
 @import '../../../_theme.scss';
-.encounter.container {
+.encounter-container {
     background: url('../../../assets/images/mars-globe-valles-marineris-enhanced.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
@@ -38,17 +38,36 @@ p {
 }
 
 .encounters {
+    position: relative;
     overflow-y: scroll;
-    height: 325px;
+    max-width: 100%;
+    height: 40%;
     background-color: $color-reverse;
     color: #000;
     padding: 30px;
     font-size: 1rem;
     margin-bottom: 1rem;
+
+    .loader-container {
+        position: absolute;
+        display: inline-block;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+
+            .encounter-loader {
+                border: 10px solid $color_loader1;
+                border-top: 10px solid $color_loader2;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                animation: spin 2s linear infinite;
+            }
+        }
+    }
+
     p {
         border-bottom: 1px solid $color_mars;
     }
-}
 
 footer {
     position: fixed;
@@ -71,23 +90,6 @@ footer {
     }
 }
 
-.loader {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-}
-
-.encounters-loader {
-    position: absolute;
-    border: 10px solid #c76a49;
-    border-top: 10px solid #a42203;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
-    top: 50%;
-}
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -98,10 +100,20 @@ footer {
     footer {
         margin-left: 70%;
     }
+
+    .loader-container {
+        // top: 23%;
+        // left: 24%;
+    }
 }
 
 @media screen and (min-width: 1240px) {
     footer {
         margin-left: 80%;
+    }
+
+    .loader-container {
+        // top: 23%;
+        // left: 42%;
     }
 }
