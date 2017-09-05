@@ -1,10 +1,10 @@
-# MarsColonyApp
+# Mars Colony App
 
 ![welcomepage](https://github.com/mariesarabia/Mars-Colony/blob/master/src/assets/images/screenshot-marscolony.png "Mars Colony Welcome Page")
 
 Mars Colony is a web-based application for Earth colonists exploring Mars using Angular 2.
 
-# Features:
+## Features:
 Implements GET and POST HTTP requests using Angular's HTTP service to:
 * Save a new Colonist's information
 * Save a new Alien encounter
